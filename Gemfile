@@ -2,7 +2,15 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
-
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'rubocop-rails', require: false
+gem 'pagy', '~> 5.10' # omit patch digit
+gem "haml-rails", "~> 2.0"
+gem 'bootstrap', '~> 5.1.3'
+gem 'jquery-rails'
+gem 'groupdate' # optional
+gem 'apexcharts'
+gem 'http', '~> 5.0.4'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
